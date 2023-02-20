@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --h-color:#ff5500;
+    --a-color:#cb7575;
+    --p-color:#717275;
+    --hover-color:#f1c522;
+    --h-fontFamily:'Amatic SC', cursive;
+    --body-fontFamily:'Source Sans Pro', sans-serif;
+}
+body{
+    font-family: var(--body-fontFamily);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--h-fontFamily) !important;
+}
+.load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+    background-color: var(--a-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    color: red;
+}
+.btn-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 20000;
+    display: none;
+    color: var(--hover-color) !important;
+    background-color: var(--a-color);
+}
+.PageBrand{
+    color: var(--h-color);
+    font-family: var(--h-fontFamily);
+    font-size: 25px;
+}
+.menu li a{
+    color: var(--p-color);
+}
+.menu-special{
+    color: var(--a-color) !important;
+}
+.menu li a:hover{
+    color: var(--a-color);
+}
+.header-container{
+    background-image: url(../images/couple-hugging-laughing-near-wall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #d9d8d6;
+    padding: 50px;
+    height: calc(90vh - 98px);
+    border-radius: 10px;
+}
+.header-container h2{
+    color: var(--a-color);
+    font-family: var(--h-fontFamily);
+    font-size: 1.5rem;
+}
+.header-container h1{
+    color: white;
+    font-family: var(--h-fontFamily);
+    font-size: 2rem;
+}
+.header-container i{
+    color: green;
+}
+.header-container p{
+    color: white;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: var(--h-fontFamily);
+    font-size: 15px;
+    background-color: var(--a-color);
+    color: white;
+}
+button:hover{
+    background-color: var(--hover-color);
+    transition-duration: 3s;
+}
+.save-date{
+    background-color: var(--h-color);
+    color: white;
+    border-radius: 25px 0;
+}
+.save-date span{
+    color: black;
+}
+.date{
+    border-radius: 25px 0;
+}
+.title{
+    color: var(--hover-color);
+}
+.title i{
+    color: red;
+}
+.story p,
+.story span{
+    color: var(--p-color);
+    font-size: 20px;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1c522;
+    padding: 3px 8px;
+    color: black;
+}
+.icons:hover{
+    color: white;
+    transition-duration: 2s;
+}
+.weeding,
+.gallery,
+.get
+{
+    background-color: #e9eaeb;
+}
+.weeding p{
+    color: var(--p-color);
+}
+img:hover{
+    transform: scale(1.02);
+    transition-duration: 2s;
+}
+.rsvp{
+    background-image: url(../images/closeup-shot-newlywed-couple-sitting-bench.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.get a{
+    text-decoration: none;
+    color: black;
+}
+.get a:hover{
+    color: var(--hover-color);
+    transition: 2s;
+}
+.footer{
+    background-color: var(--a-color);
+}
+.footer a{
+    font-family: var(--h-fontFamily);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+.header-container h2{
+    font-size: 10px;
+}
+.header-container h1{
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 991px){
+.header-container {
+    padding: 40px;
+    min-height: 630px;
+}
+.header-container h2{
+    font-size: 11px;
+}
+.header-container h1{
+    font-size: 15px;
+}
+}
+@media only screen and (min-width: 580px) and (max-width: 1170px){
+.header-container {
+    height: inherit;
+}}
+@media screen and (max-width: 1200px){
+.header-container {
+    background-size: contain;
+    background-position: bottom;
+}}
